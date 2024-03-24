@@ -1,4 +1,3 @@
-
 # <img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/bd0f85c2-26ab-488e-98e3-cce94a095788" alt="Logo_UPC svg" width="40" height="40"> dabd-apunts-artuaragon
 Apunts de l'assignatura DABD a la UPC. LAB + TEO
 
@@ -16,7 +15,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO
 |Importar SQL: |mysql -u username -p databasename < data.sql| psql -U username databasename < data.sql|
 |Exportar SQL: |mysqldump -u username -p databasename [tablename] > data.sql (Si vols poder importar-la en altres SGBD pot ser convenient usar l’opcio --compatible=ansi)| pg dump -U username databasename [-t tablename] > data.sql (Format mes compatible afegint opcions: --no-tablespaces --no-owner --no-acl --column-inserts)|
 
-# Solucions LABS
+## Solucions LABS
 
 |    |S1|S2|S3|S4|S5|
 |----|--|--|--|--|--|
