@@ -25,15 +25,15 @@ Els fitxers inicials els trobaràs a la carpeta /home/public/dabd/05mysql_php d'
 
 ## Criteris de correcció:
 
+- No fet.
 - No funciona afegir usuaris i no puc provar res.
 - No es poden editar usuaris.
 - No es poden eliminar usuaris.
-- No es poden editar usuaris que tenen caracter '.
-- No es poden editar eliminar usuaris que tenene caracter '.
-- No es poden editar/eliminar usuaris que tenen caracter '.
+- No es poden editar usuaris que tenen caràcter ' o ".
+- No es poden eliminar usuaris que tenen caràcter ' o ".
 - Permet SQL injection.
 - L'eliminació d'usuaris no et porta a la pàgina inicial.
-- Per eliminar usuaris no fa falta mostrar el formulari.
+- Per eliminar usuaris no fa falta mostrar el formulari de crear/editar usuaris.
 
 ## Solució
 
