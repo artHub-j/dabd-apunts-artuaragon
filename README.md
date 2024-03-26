@@ -26,6 +26,6 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO
 
 | Sessions           | S2                               | S3 | S4 | S5 | S6 |
 |--------------------|----------------------------------|----|----|----|----|
-| Nota (entre 0 i 5) | 3                                | 5  | -  | -  | -  |
-| Errors             | MySQL taula movies no existeix.  | -  | -  | -  | -  |
+| Nota (entre 0 i 5) | 3                                | 5  | 4.5  | -  | -  |
+| Errors             | MySQL taula movies no existeix.  | -  | Host havia de ser ubiwan.epsevg.upc.edu | -  | -  |
 
