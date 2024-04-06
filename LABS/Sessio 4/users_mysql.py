@@ -24,9 +24,9 @@ optp.add_option("-s", "--show", dest="show", action="store_true", default=False,
 
 conn = mysql.connector.connect(
     host="localhost",
-    user="est_d9971765",
-    password="dB.d9971765",
-    database="est_d9971765"
+    user="username",
+    password="password",
+    database="databasename"
 )
 cursor = conn.cursor()
 

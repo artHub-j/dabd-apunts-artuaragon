@@ -23,9 +23,9 @@ optp.add_option("-s", "--show", dest="show", action="store_true", default=False,
 (opt, args) = optp.parse_args()
 
 conn = psycopg2.connect(
-    dbname="est_d9971765",
-    user="est_d9971765",
-    password="dB.d9971765",
+    dbname="databasename",
+    user="username",
+    password="password",
     host="localhost",
     port="5432"
 )
