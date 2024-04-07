@@ -39,4 +39,10 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 | Nota (entre 0 i 5) |- |- |- | - | - | - |
 | Errors             |- |- |- | - | - | - |
 
+## Exemples d'Activitat 1
+
+|    |aprovats.db|
+|----|:--:|
+|Link|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts.md)|
+
 #
