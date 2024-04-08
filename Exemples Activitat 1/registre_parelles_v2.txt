@@ -1,0 +1,62 @@
+Considerem que gestionem un registre de parelles de fet (unions i separacions
+de parelles de fet) mitjançant una única relació, amb els següents atributs:
+
+* Dni del 1er membre
+* Sexe del 1er membre (M o F)
+* Dni del 2on membre
+* Sexe del 2on membre (M o F)
+* Data del registre
+* Tipus de registre (UNI o SEP)
+* Ciutat del registre
+* Comarca del registre
+
+Les persones es distingeixen pel seu dni, les ciutats i comarques pel seu nom.
+
+Una mateixa parella es pot registrar vàries vegades, tant per unir-se com per
+separar-se, però mai en la mateixa data. Evidentment, les parelles que es
+separen ho fan en una data posterior a la de la seva unió i no necessàriament
+a la mateixa ciutat on es van unir. Les parelles poden ser del mateix sexe.
+
+
+1) Crea les queries que responguin les següents preguntes (una sola query per
+cada pregunta).
+
+1.a) Número de separacions de cada ciutat
+
+1.b) Els dos anys en que hi ha menys separacions
+
+1.c) Anys en que el número d'unions és diferent al de separacions
+
+1.d) Número de parelles que s'han separat a diferent comarca en la que es van unir
+
+1.e) Quina parella de les que s'han separat ha durat més dies?
+
+
+2) Quines dependències funcionals (D.F.) té el problema? Usa els mateixos noms
+d'atributs que els que apareixen a la taula.
+
+
+3) A partir de les D.F. anteriors, crea les taules adequades per tal que
+estiguin normalitzades en 3FN. Recorda de definir les claus primàries,
+alternatives i foranes, les polítiques ON DELETE i ON UPDATE de les claus
+foranes i si els atributs són NOT NULL.
+
+Es recomanable posar en les taules normalitzades els mateixos noms d'atributs
+que els de la taula original, així et serà més fàcil transferir les dades.
+Tens llibertat per triar els noms de la taules normalitzades, però intenta que
+siguin noms adequats, que expressin el concepte que emmagatzemen.
+
+
+4) Trasllada les dades de la taula original a les taules normalitzades.
+
+
+5) Resol les mateixes queries de l'apartat 1) sobre les taules normalitzades.
+5.a)
+
+5.b)
+
+5.c)
+
+5.d)
+
+5.e)

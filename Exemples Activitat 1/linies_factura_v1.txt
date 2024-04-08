@@ -1,0 +1,68 @@
+Considerem que gestionem la facturació de productes a empreses mitjançant una
+única relació, amb els següents atributs:
+
+* NIF de l'empresa
+* Nom de l'empresa
+* Ciutat on està ubicada l'empresa
+* Codi del producte
+* Nom del producte
+* Preu de cost del producte
+* Número de la factura
+* Data de la factura
+* Quantitat de producte que s'ha facturat
+* Preu a que s'ha facturat l'unitat de producte
+
+Les empreses es distingeixen pel seu NIF, les ciutats pel seu nom, els
+productes pel seu codi i les factures pel seu número. Una mateixa factura pot
+tenir varis productes facturats. Un producte no pot aparèixer a la mateixa
+factura dues vegades.
+
+
+1) Crea les queries que responguin les següents preguntes (una sola query per
+cada pregunta).
+
+Per import facturat s'entén el preu facturat per unitat multiplicat per la
+quantitat facturada.
+
+Per benefici s'entén la diferència entre el preu facturat menys el preu de
+cost multiplicada per la quantitat facturada.
+
+1.a) Les dues empreses amb més quantitat de factures
+
+1.b) Empresa amb la factura amb major import total
+
+1.c) Mes amb major número de factures
+
+1.d) Benefici obtingut per cada empresa
+
+1.e) Parelles d'empreses diferents ubicades a la mateixa ciutat
+
+
+2) Quines dependències funcionals (D.F.) té el problema? Usa els mateixos noms
+d'atributs que els que apareixen a la taula.
+
+
+3) A partir de les D.F. anteriors, crea les taules adequades per tal que
+estiguin normalitzades en 3FN. Recorda de definir les claus primàries,
+alternatives i foranes, les polítiques ON DELETE i ON UPDATE de les claus
+foranes i si els atributs són NOT NULL.
+
+Es recomanable posar en les taules normalitzades els mateixos noms d'atributs
+que els de la taula original, així et serà més fàcil transferir les dades.
+Tens llibertat per triar els noms de la taules normalitzades, però intenta que
+siguin noms adequats, que expressin el concepte que emmagatzemen.
+
+
+4) Trasllada les dades de la taula original a les taules normalitzades.
+
+
+5) Resol les mateixes queries de l'apartat 1) sobre les taules normalitzades.
+5.a)
+
+5.b)
+
+5.c)
+
+5.d)
+
+5.e)
