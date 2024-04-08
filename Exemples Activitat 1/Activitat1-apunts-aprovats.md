@@ -1,4 +1,10 @@
-# <img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/bd0f85c2-26ab-488e-98e3-cce94a095788" alt="Logo_UPC svg" width="40" height="40"> dabd-apunts-artuaragon | Activitat 1 Apunts | ABRIL 2024 |
+# <img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/bd0f85c2-26ab-488e-98e3-cce94a095788" alt="Logo_UPC svg" width="40" height="40"> dabd-apunts-artuaragon | Activitat 1 Apunts aprovats.db | ABRIL 2024 |
+
+|      |                                                                                                                            aprovats.db                                                                                                                            |                                                                                                                            registre_parelles.db                                                                                                                            |                                                                                                                            linies_factura.db                                                                                                                            |
+| ---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Link | [<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-aprovats.md) | [<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-registre_parelles.md) | [<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-linies_factura.md) |
+
+#
 
 ## Instruccions
 
@@ -630,7 +636,7 @@ d'atributs que els que apareixen a la taula.
 name, city, district → code, grade, pdate, subject, semester
    subject, semester → code, name, city, district, grade, pdate
 ```
-
+O
 ```
 Student code determines student name, city, and county:
 { code } -> { name, city, district }
