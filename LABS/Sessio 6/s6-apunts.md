@@ -294,3 +294,13 @@ I executant-lo ens crearà les dades fictícies per als nostres models:
 ```shell
 python manage.py createdata 
 ```
+
+## Solució:
+
+|Carpeta|productes/|
+|:-:|:-:|
+|Link|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/tree/main/LABS/Sessio%206/producte)|
+
+|Arxius|settings.py|models.py|
+|:-:|:-:|:-:|
+|Link|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%206/settings.py)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%206/producte/models.py)|
