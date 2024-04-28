@@ -84,21 +84,24 @@ Crearem un servidor web amb una eina ORM (Object Relational Mapping). Ens ajudar
     $ python manage.py sqlmigrate producte 0001
     $ python manage.py migrate
     ```
-10)   Indiquem que els models creats són gestionables des de la part administrativa. Editem el fitxer producte/admin.py perquè contingui:  
+10)   Indiquem que els models creats són gestionables des de la part administrativa. Editem el fitxer producte/admin.py perquè contingui:
 ```python
 from django.contrib import admin
-
 from .models import ProductTemplate, ProductVariant
-
 admin.site.register(ProductTemplate)
 admin.site.register(ProductVariant)
 ```
+
 Si reengeguem de nou el servidor i entrem a la part administrativa, a més dels usuaris i grups podrem administrar plantilles de productes i productes.
 
 ## Exercicis:
 - Canvia la configuració del fitxer dabd/settings.py per usar un altre SGBD com per exemple el PostgreSQL del servidor ubiwan.epsevg.upc.edu que escolta pel port 5432 (https://docs.djangoproject.com/en/3.1/ref/settings/#databases), genera les taules a la nova base de dades (python manage.py migrate) i torna a crear un usuari administrador (python manage.py createsuperuser). Per exemple, per PostgreSQL et caldrà instal·lar prèviament la llibreria de Python que permet connectar-se a una base de dades PostgreSQL (pip install psycopg2 o pip install psycopg2-binary).
 
 - Afegeix una nova entitat ProductCategory que siguin les categories (o famílies) de productes que permeti guardar el nom de la categoria, la categoria pare (per tal d'implementar una relació jeràrquica, una categoria pot contenir vàries subcategories i així successivament). I entre les plantilles de productes i categories hi ha una relació de molts a molts (many2many), doncs una plantilla de productes pot pertànyer a vàries categories i viceversa (afegiu aquesta relació només en un lloc, per exemple un camp ManyToManyField a ProductCategory que apunti a ProductTemplate; Django ja crea automàticament la taula intermèdia que implementa la relació de molts a molts). Els camps categoria pare i plantilles de producte haurien de poder ser buits o nulls; mireu a la documentació de Django com podeu usar les opcions blank i null, doncs per defecte els camps no poden ser buits.
+
+<p align="center">
+  <img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/ae6b9ec5-65c8-4be5-9588-87b9bd8adcdb">
+</p>
 
 
 ## PART 3. Llegir/crear/modificar/eliminar registres des de codi Python
