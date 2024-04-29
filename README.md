@@ -3,7 +3,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 
 ## Xuleta Comandes MySQL/PostgreSQL
 
-|   |MySQL|PostrgreSQL|Sqlite3|
+|   |MySQL|PostrgreSQL|SQLite3|
 |---|-----|---------|---|
 |Iniciar sessió: |mysql -u est_username -p | psql -h ubiwan.epsevg.upc.edu -U est_username -W   | sqlite3 filename.db  |
 |Ajuda: |\h| \h (Sintaxis SQL) i \\? (Comandes CLI)                                             | .help|
