@@ -45,4 +45,103 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 |----|:---------:|:------------------:|:---------------:|
 |Link|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-aprovats.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-registre_parelles.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-linies_factura.md)|
 
-#
+## Directory Tree
+
+```
+dabd-apunts-artuaragon/
+├── Exemples Activitat 1/
+│   ├── Activitat1-apunts-aprovats.md
+│   ├── Activitat1-apunts-linies_factura.md
+│   ├── Activitat1-apunts-registre_parelles.md
+│   ├── aprovats1.txt
+│   ├── aprovats2.txt
+│   ├── aprovats3.txt
+│   ├── aprovats.db
+│   ├── linies_factura.db
+│   ├── linies_factura_v1.txt
+│   ├── linies_factura_v2.txt
+│   ├── registre_parelles.db
+│   ├── registre_parelles_v1.txt
+│   └── registre_parelles_v2.txt
+├── LABS/
+│   ├── Sessio 1/
+│   │   ├── 01set_theory/
+│   │   │   ├── set_theory.db
+│   │   │   ├── set_theory.sql
+│   │   │   └── set_theory.txt
+│   │   └── s1-apunts.md
+│   ├── Sessio 10/
+│   │   └── s10-apunts.md
+│   ├── Sessio 11/
+│   │   ├── 11mongodb/
+│   │   │   └── users_mongodb.py
+│   │   └── s11-apunts.md
+│   ├── Sessio 12/
+│   │   ├── 12firestore/
+│   │   │   ├── users_firestore.py
+│   │   │   └── users_firestore_username_identifier.py
+│   │   └── s12-apunts.md
+│   ├── Sessio 2/
+│   │   ├── 02accounts/
+│   │   │   ├── accounts1.db
+│   │   │   ├── accounts2.db
+│   │   │   ├── accounts2.txt
+│   │   │   ├── accounts.sql
+│   │   │   └── accounts.txt
+│   │   └── s2-apunts.md
+│   ├── Sessio 3/
+│   │   ├── 03claus_foranees/
+│   │   │   └── maqfact_foreign_keys.sql
+│   │   └── s3-apunts.md
+│   ├── Sessio 4/
+│   │   ├── 04python_sqlinjection/
+│   │   │   ├── users_sqlite_inj.py
+│   │   │   └── users_sqlite_no_inj.py
+│   │   ├── prova.db
+│   │   ├── s4-apunts.md
+│   │   ├── sqlite3
+│   │   ├── users.db
+│   │   ├── users_mysql.py
+│   │   └── users_postgres.py
+│   ├── Sessio 5/
+│   │   ├── 05mysql_php/
+│   │   │   ├── add_users.html
+│   │   │   ├── add_users.php
+│   │   │   ├── crud-php-mysql-artuaragon/
+│   │   │   │   ├── add_edit.php
+│   │   │   │   ├── b_drop.png
+│   │   │   │   ├── b_edit.png
+│   │   │   │   ├── config.php
+│   │   │   │   ├── delete.php
+│   │   │   │   └── index.php
+│   │   │   ├── crud-php-mysql-simple-inicial/
+│   │   │   │   ├── add_edit.php
+│   │   │   │   ├── b_drop.png
+│   │   │   │   ├── b_edit.png
+│   │   │   │   ├── config.php
+│   │   │   │   └── index.php
+│   │   │   ├── list_users.html
+│   │   │   ├── list_users.php
+│   │   │   ├── users.html
+│   │   │   └── users.php
+│   │   └── s5-apunts.md
+│   ├── Sessio 6/
+│   │   └── s6-apunts.md
+│   ├── Sessio 7/
+│   │   ├── 07indexs/
+│   │   │   ├── bigger.py
+│   │   │   └── consulta_bigger.py
+│   │   └── s7-apunts.md
+│   ├── Sessio 8/
+│   │   ├── 08transactions_triggers/
+│   │   │   └── transaccions.py
+│   │   └── s8-apunts.md
+│   └── Sessio 9/
+│       ├── 09postgresql/
+│       │   └── bigger.sql
+│       └── s9-apunts.md
+├── Practiques (Sessions 1, 2, 3 i 4).pdf
+├── README.md
+└── TEO/
+
+```
