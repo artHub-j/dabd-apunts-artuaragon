@@ -129,3 +129,37 @@ Column Name 	Description
 tbl 	The table name that was analyzed.
 idx 	The name of the index that was analyzed.
 stat 	Information about the table and indexes analyzed that will be later used by the query optimizer.
+
+## Recopilació dels resultats i valoracions d'usar o no usar índexs en SGBD MySQL i PostgreSQL
+
+MySQL: Temps per fer 10.000 consultes amb i sense índex en la columna owner de la taula amb 400 contractes
+
+    .
+
+MySQL: Surt a compte usar un índex per consultar la columna owner de la taula amb 400 contractes? Raona amb el que hem vist a teoria per què si o per què no.
+
+    . 
+
+MySQL: Temps per fer 10.000 consultes amb i sense índex en la columna owner de la taula amb 4000 contractes
+
+    .
+
+MySQL: Surt a compte usar un índex per consultar la columna owner de la taula amb 4000 contractes? Raona amb el que hem vist a teoria per què si o per què no.
+
+    . 
+
+PostgreSQL: Temps per fer 10.000 consultes sense índex, amb un índex btree i amb un índex hash en la columna owner de la taula amb 400 contractes
+
+    .
+
+PostgreSQL: Surt a compte usar un índex Btree per consultar la columna owner de la taula amb 400 contractes? I un índex Hash? Raona amb el que hem vist a teoria per què si o per què no.
+
+    .
+
+PostgreSQL: Temps per fer 10.000 consultes sense índex, amb un índex btree i amb un índex hash en la columna owner de la taula amb 4000 contractes
+
+    . 
+
+PostgreSQL: Surt a compte usar un índex Btree per consultar la columna owner de la taula amb 4000 contractes? I un índex Hash? Raona amb el que hem vist a teoria per què si o per què no.
+
+    . 
