@@ -134,7 +134,12 @@ stat 	Information about the table and indexes analyzed that will be later used b
 
 MySQL: Temps per fer 10.000 consultes amb i sense índex en la columna owner de la taula amb 400 contractes
 
-    .
+- Amb índex: 
+
+
+- Sense índex: 0:00:11.238210
+
+    ![alt text](image-1.png)
 
 MySQL: Surt a compte usar un índex per consultar la columna owner de la taula amb 400 contractes? Raona amb el que hem vist a teoria per què si o per què no.
 
