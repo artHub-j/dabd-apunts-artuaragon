@@ -25,12 +25,12 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 
 | Sessions           |S1| S2                               | S3 | S4 | S5 | S6 |
 |--------------------|--|----------------------------------|----|----|----|----|
-| Nota (entre 0 i 5) |5 |3                                | 5  | 4.5  | 4  | -  |
-| Errors             |Bé|MySQL taula movies no existeix.  | Bé | Host havia de ser ubiwan.epsevg.upc.edu. | No es poden editar/eliminar usuaris que tenen caràcter ".   | -  |
+| Nota (entre 0 i 5) |5 |3                                | 5  | 4.5  | 4  | 5  |
+| Errors             |Bé|MySQL taula movies no existeix.  | Bé | Host havia de ser ubiwan.epsevg.upc.edu. | No es poden editar/eliminar usuaris que tenen caràcter ".   | Bé |
 
-|Total Provisional|
+|Total LABS 1ª Part|
 |:---:|
-|6.6|
+|8.6|
 
 ## Notes LABS 2ª Part (Sessió 7 - 12) [10%]
 
