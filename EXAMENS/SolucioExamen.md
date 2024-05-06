@@ -42,3 +42,4 @@ es reflecteixen de manera directa en el teu model mitjançant Restriccions Semá
 
 ## SOLUCIÓ
 
+![SOL_DiagramaClasses](SOL_DiagramaClasses.png)
