@@ -134,30 +134,31 @@ stat 	Information about the table and indexes analyzed that will be later used b
 
 MySQL: Temps per fer 10.000 consultes amb i sense índex en la columna owner de la taula amb 400 contractes
 
- - Amb index: 0:00:01.683467
- - Sense index: 0:00:02.334044
+    - Amb índex: 0:00:01.683467
+    - Sense índex: 0:00:02.334044
 
 MySQL: Surt a compte usar un índex per consultar la columna owner de la taula amb 400 contractes? Raona amb el que hem vist a teoria per què si o per què no.
 
-    No surt a compte.
+    Es podria dir que no surt a compte. El canvi no és tan significatiu com per poder dir que l'ús d'index és necessari en aquest cas. Però una millora del 27% continua sent una millora. És més util usar index en taules amb més files.
 
 MySQL: Temps per fer 10.000 consultes amb i sense índex en la columna owner de la taula amb 4000 contractes
 
- - Amb índex: 0:00:02.110291
+    - Amb índex: 0:00:02.110291
   
 ![alt text](image-2.png)
 
- - Sense índex: 0:00:11.238210
+    - Sense índex: 0:00:11.238210
 
 ![alt text](image-1.png)
 
 MySQL: Surt a compte usar un índex per consultar la columna owner de la taula amb 4000 contractes? Raona amb el que hem vist a teoria per què si o per què no.
 
-    . 
+    Sí que surt a compte, passar d'un temps de consulta d'11 segons a 2 segons, és millora descomunal. Comparant amb el temps anterior (de consultes amb 400 contractes) podem veure que la millora és produeix per l'augment de dades a consultar. Més dades hi hagi, els indexos milores més el temps de consulta.
 
 PostgreSQL: Temps per fer 10.000 consultes sense índex, amb un índex btree i amb un índex hash en la columna owner de la taula amb 400 contractes
 
-    .
+    Sense índex: 0:00:01.341020
+    Amb índex: 
 
 PostgreSQL: Surt a compte usar un índex Btree per consultar la columna owner de la taula amb 400 contractes? I un índex Hash? Raona amb el que hem vist a teoria per què si o per què no.
 
@@ -165,7 +166,8 @@ PostgreSQL: Surt a compte usar un índex Btree per consultar la columna owner de
 
 PostgreSQL: Temps per fer 10.000 consultes sense índex, amb un índex btree i amb un índex hash en la columna owner de la taula amb 4000 contractes
 
-    . 
+    Sense índex: 0:00:03.472960
+    Amb índex: 
 
 PostgreSQL: Surt a compte usar un índex Btree per consultar la columna owner de la taula amb 4000 contractes? I un índex Hash? Raona amb el que hem vist a teoria per què si o per què no.
 
