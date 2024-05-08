@@ -43,3 +43,7 @@ es reflecteixen de manera directa en el teu model mitjançant Restriccions Semà
 ## SOLUCIÓ
 
 ![SOL_DiagramaClasses](SOL_DiagramaClasses.png)
+
+## SOLUCIÓ PROFE
+
+![SOL_DiagramaClasses_Profe](SOL_DiagramaClasses_Profe.png)
