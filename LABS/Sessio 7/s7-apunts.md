@@ -158,7 +158,8 @@ MySQL: Surt a compte usar un índex per consultar la columna owner de la taula a
 PostgreSQL: Temps per fer 10.000 consultes sense índex, amb un índex btree i amb un índex hash en la columna owner de la taula amb 400 contractes
 
     Sense índex: 0:00:01.341020
-    Amb índex: 
+    Amb índex btree: 0:00:01.269919
+    Amb índex hash: 0:00:01.348915
 
 PostgreSQL: Surt a compte usar un índex Btree per consultar la columna owner de la taula amb 400 contractes? I un índex Hash? Raona amb el que hem vist a teoria per què si o per què no.
 
@@ -167,7 +168,8 @@ PostgreSQL: Surt a compte usar un índex Btree per consultar la columna owner de
 PostgreSQL: Temps per fer 10.000 consultes sense índex, amb un índex btree i amb un índex hash en la columna owner de la taula amb 4000 contractes
 
     Sense índex: 0:00:03.472960
-    Amb índex: 
+    Amb índex btree: 0:00:01.121706
+    Amb índex hash: 0:00:01.041148
 
 PostgreSQL: Surt a compte usar un índex Btree per consultar la columna owner de la taula amb 4000 contractes? I un índex Hash? Raona amb el que hem vist a teoria per què si o per què no.
 
