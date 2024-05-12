@@ -21,6 +21,10 @@ Per no perdre la coherència, quantes transaccions hem de tenir? Per tant, a on 
 
 Retoca l'script anterior que permeti fer de forma coherent una transacció que liquidi els interessos anuals dels comptes de tipus 'C' de la b.d. bigger.db creada la setmana passada.
 
+| | bigger.db amb |
+|:-:|:-------:|
+|Link|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">]()|
+
 Suposem que el tipus d'interès és del 1% del saldo actual i només s'aplica als comptes de tipus 'C'. Per tant ingressarem 1 eur per cada 100 eur de saldo que tingui el compte de tipus 'C', arrodonit a 2 decimals (els saldos són en euros i els euros només tenen 2 cèntims).  Aquest diners es transferiran del compte propi del banc que és el compte de tipus 'S' que té el número acc_id menor. Per tant, per liquidar els interessos, el banc transferirà els diners dels interessos des del compte propi del banc (de tipus 'S' que té el número acc_id menor) a cada compte de tipus 'C'. El banc no poc fabricar diners, per tant si sumem el saldo de tots els comptes abans i desprès de fer la liquidació d'interessos han de ser exactament iguals. I tots els comptes han de tenir els saldos només amb dos decimals.
 
 Utilitzeu la b.d. Sqlite3 bigger.db que vam crear la setmana passada amb l'script bigger.py. Només caldrà modificar la taula comptes, taula que guarda la informació dels comptes amb els atributs acc_id, type i balance. És important mantenir la coherència de la base de dades:
