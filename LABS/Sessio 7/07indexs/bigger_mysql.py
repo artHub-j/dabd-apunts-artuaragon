@@ -129,10 +129,10 @@ def create_contractes(cur):
 
 # Programa principal
 conn = mysql.connector.connect(
-  host="ubiwan.epsevg.upc.edu",
-  user="est_d9971765",
-  password="dB.d9971765",
-  database="est_d9971765"
+  host="yourhost",
+  user="est_youruser",
+  password="youpassword",
+  database="yourdatabase"
 )
 
 cur = conn.cursor()
