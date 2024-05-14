@@ -3,17 +3,17 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 
 ## Xuleta Comandes MySQL/PostgreSQL
 
-|   |MySQL|PostgreSQL|SQLite3|
-|---|-----|---------|---|
-|Iniciar sessió: |mysql -u est_username -p | psql -h ubiwan.epsevg.upc.edu -U est_username -W   | sqlite3 filename.db  |
-|Ajuda: |\h| \h (Sintaxis SQL) i \\? (Comandes CLI)                                             | .help|
-|Sortir: |\q|\q                                                                                 | .quit / .exit  |
-|Llistar db: |show databases;| \l                                                               |  -  |
-|Canviar de bd: |\u| \c                                                                         |  - |
-|Llistar taules/vistes: |show tables;|\d                                                        | .tables |
-|Veure esquema taula/vista: |desc table/view;|\d table/view                                     | .schema tablename |
-|Importar SQL: |mysql -u username -p databasename < data.sql| psql -U username databasename < data.sql| - |
-|Exportar SQL: |mysqldump -u username -p databasename [tablename] > data.sql (Si vols poder importar-la en altres SGBD pot ser convenient usar l’opcio --compatible=ansi)| pg dump -U username databasename [-t tablename] > data.sql (Format mes compatible afegint opcions: --no-tablespaces --no-owner --no-acl --column-inserts)| - |
+|                            |       SQLite3       |                                                                           MySQL                                                                           |                                                                         PostgreSQL                                                                        |
+|:--------------------------:|:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Iniciar sessió:            | sqlite3 filename.db | mysql -u est_username -p                                                                                                                                  | psql -h ubiwan.epsevg.upc.edu -U est_username -W                                                                                                          |
+| Ajuda:                     | .help               | \h                                                                                                                                                        | \h (Sintaxis SQL) i \? (Comandes CLI)                                                                                                                     |
+| Sortir:                    | .quit / .exit       | \q                                                                                                                                                        | \q                                                                                                                                                        |
+| Llistar db:                | -                   | show databases;                                                                                                                                           | \l                                                                                                                                                        |
+| Canviar de bd:             | -                   | \u                                                                                                                                                        | \c                                                                                                                                                        |
+| Llistar taules/vistes:     | .tables             | show tables;                                                                                                                                              | \d                                                                                                                                                        |
+| Veure esquema taula/vista: | .schema tablename   | desc table/view;                                                                                                                                          | \d table/view                                                                                                                                             |
+| Importar SQL:              | -                   | mysql -u username -p databasename < data.sql                                                                                                              | psql -U username databasename < data.sql                                                                                                                  |
+| Exportar SQL:              | -                   | mysqldump -u username -p databasename [tablename] > data.sql (Si vols poder importar-la en altres SGBD pot ser convenient usar l’opcio --compatible=ansi) | pg dump -U username databasename [-t tablename] > data.sql (Format mes compatible afegint opcions: --no-tablespaces --no-owner --no-acl --column-inserts) |
 
 ## Solucions LABS
 
