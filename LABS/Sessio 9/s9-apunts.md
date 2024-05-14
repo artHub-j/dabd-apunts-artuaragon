@@ -75,11 +75,11 @@ SELECT * from names n JOIN owners o ON n.nif=o.own_id AND n.name=o.own_name JOIN
 ## D. Optimitzar postgreSQL
 La configuració per defecte de postgreSQL és molt conservadora. Podem augmentar notablement el seu rendiment si li assignem més memòria RAM per fer molts dels seus processos.
 
-Optimització general
+### Optimització general
 
-Cal editar els següents paràmetres del fitxer /etc/postgresql/12/main/postgresql.conf (cal canviar el número 12 segons la versió de PostgreSQL que tenim) i posteriorment reiniciar el servidor PostgreSQL. Aquesta proposta s'ha extret de diferents tutorials com per exemple Tuning_Your_PostgreSQL_Server. També podem usar la calculadora Pg Tune.
+Cal editar els següents paràmetres del fitxer /etc/postgresql/12/main/postgresql.conf (cal canviar el número 12 segons la versió de PostgreSQL que tenim) i posteriorment reiniciar el servidor PostgreSQL. Aquesta proposta s'ha extret de diferents tutorials com per exemple [Tuning_Your_PostgreSQL_Server](https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server). També podem usar la calculadora [Pg Tune](https://pgtune.leopard.in.ua/#/).
 
-Per saber que significa cada paràmetre mira la documentació de postgreSQL.
+Per saber que significa cada paràmetre mira [la documentació de postgreSQL](https://www.postgresql.org/docs/12/runtime-config-resource.html).
 
 | Paràmetre            | Valor per defecte | Recomanat                            | Notes                                                              |
 |----------------------|-------------------|--------------------------------------|--------------------------------------------------------------------|
@@ -102,41 +102,44 @@ max_wal_size: Permet definir la grandària màxima que pot ocupar el WAL. Per de
 
 Quan s'arribi al temps de checkpoint_timeout o quan el WAL ocupi max_wal_size, el que passi primer, s'escriuen a disc les pàgines amb dades modificades i totes les operacions del WAL. Això implica que el SGBD ha de dedicar molts recursos de I/O a disc cada cert temps. Si incrementem els valors de checkpoint_timeout i/o max_wal_size, el SGBD no tindrà tantes interrupcions però tindrem l'inconvenient que en cas d'una caiguda del sistema, el temps de recuperació serà més gran.
 
-Per a més detalls llegir la documentació: WAL configuration
+Per a més detalls llegir la documentació: [WAL configuration](https://www.postgresql.org/docs/12/wal-configuration.html)
 
 ### Optimització de queries individuals
 
 Per optimitzar queries individuals, podem activar el log de queries lentes, per exemple les que durin més de 50 mseg. Les guardarà a /var/log/postgresql/postgresql-12-main.log:
-
+```
   log_min_duration_statement = 50
-
-Optimització temporal per fer una importació de moltes dades
+```
+### Optimització temporal per fer una importació de moltes dades
 
 Per fer un import d'una b.d. molt voluminosa es pot optimitzar canviant aquests paràmetres (cal tornar a deixar els paràmetres anteriors un cop l'import estigui fet i executar un VACUUM ANALYZE sobre la b.d. per actualitzar les estadístiques internes):
-
+```
   fsync = off
   shared_buffers = [1/3 of available memory]
   wal_buffers = 1MB
   checkpoint_timeout = 1h
   checkpoint_segments = 300  # Have a *lot* of spare disk space for this
   maintenance_work_mem = [1/3 of available memory]
-
+```
 
 Aquests són altres paràmetres importants del fitxer de configuració /etc/postgresql/12/main/postgresql.conf, que no cal que modifiqueu.
 
 Port a on escolta el servidor PostgreSQL:
-
+```
 port = 5432
+```
 Si només acceptem connexions des del localhost:
-
+```
 listen_addresses = 'localhost'
+```
 Però si acceptem connexions de tot arreu:
-
+```
 listen_addresses = '*'
+```
 O d'alguna IP en concret (podem posar una llista de IPs separades per comes):
-
+```
 listen_addresses = 'localhost,80.35.151.105'            # what IP address(es) to listen on;
-
+```
 ## E. Tasques a fer
 
 a) Instal·la el client i el servidor PostgreSQL en el teu PC o portàtil seguint les instruccions de l'apartat A.
