@@ -45,6 +45,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 |----|:---------:|:------------------:|:---------------:|
 |Link|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-aprovats.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-registre_parelles.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-linies_factura.md)|
 
+<!--
 ## Directory Tree
 
 - <img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/1dc870d5-fb16-43e4-97e9-9b5873051af9" width="15" alt="folder"> dabd-apunts-artuaragon/
@@ -142,3 +143,55 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
   - ├── Practiques (Sessions 1, 2, 3 i 4).pdf
   - ├── README.md
   - └── <img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/1dc870d5-fb16-43e4-97e9-9b5873051af9" width="15" alt="folder"> TEO/
+-->
+
+## Annex: Tasques habituals que sol fer un administrador de PostgreSQL
+
+### Crear usuari
+```
+sudo su postgres
+createuser --pwprompt --createdb nom_usuari
+```
+### Eliminar usuari
+```
+sudo su postgres
+dropuser nom_usuari
+```
+### Veure usuaris donats d'alta
+```
+$ sudo su postgres
+$ psql
+# select * from pg_shadow;
+```
+### Crear base de dades
+```
+sudo su postgres
+createdb nom_base_de_dades -O nom_usuari
+```
+o bé:
+```
+$ psql
+postgres=# CREATE DATABASE nom_base_de_dades OWNER nom_usuari;
+```
+### Eliminar base de dades
+```
+sudo su postgres
+dropdb nom_base_de_dades
+```
+# Usuaris usant la base de dades i matar queries
+Per saber quins usuaris estan usant les diferents b.d. o quines queries s'estan executant:
+```
+SELECT * FROM pg_stat_activity;
+```
+Per matar una query en concret, hem d'agafar el número de la columna procpid del llistat anterior i fer:
+```
+SELECT pg_cancel_backend(procpid);
+```
+### Còpies de Seguretat
+```
+pg_dump nom_base_de_dades > filename
+```
+Es recupera amb:
+```
+psql nom_base_de_dades < filename
+```
