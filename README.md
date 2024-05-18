@@ -178,7 +178,7 @@ postgres=# CREATE DATABASE nom_base_de_dades OWNER nom_usuari;
 sudo su postgres
 dropdb nom_base_de_dades
 ```
-# Usuaris usant la base de dades i matar queries
+### Usuaris usant la base de dades i matar queries
 Per saber quins usuaris estan usant les diferents b.d. o quines queries s'estan executant:
 ```
 SELECT * FROM pg_stat_activity;
