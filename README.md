@@ -34,7 +34,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 
 ## Notes LABS 2ª Part (Sessió 7 - 12) [10%]
 
-| Sessions           |S7|S8|S9|S10|S11|S12|
+| Sessions           |S7 (1p) |S8 (1p) |S9 (1p) |S10 (1p) |S11 (3p) |S12 (3p) |
 |--------------------|--|--|--|---|---|---|
 | Nota (entre 0 i 5) | 3 | 3 |- | - | - | - |
 | Errors             | No ben raonat postgres |  Interessos mal calculats|- | - | - | - |
