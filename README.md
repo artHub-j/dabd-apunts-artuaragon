@@ -36,8 +36,8 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 
 | Sessions           |S7|S8|S9|S10|S11|S12|
 |--------------------|--|--|--|---|---|---|
-| Nota (entre 0 i 5) |- |- |- | - | - | - |
-| Errors             |- |- |- | - | - | - |
+| Nota (entre 0 i 5) | 3 | 3 |- | - | - | - |
+| Errors             | No ben raonat postgres |  Interessos mal calculats|- | - | - | - |
 
 ## Exemples d'Activitat 1
 
