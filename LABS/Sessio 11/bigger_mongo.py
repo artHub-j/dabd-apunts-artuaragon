@@ -65,12 +65,22 @@ def create_titulars():
     print("%d titulars will be inserted." % num_titulars)
     adreces = db.adreces
     
-    for i in range(num_titulars):
+    # Afegim com a minim un titular a cada adreca
+    for address_val in adreces.find():
+        owner_id = randint(10000000, 99999999)
+        adreces.update_one(
+            {"address": address_val["address"]},
+            {"$push": {"titulars": {"owner_id": owner_id}}}
+        )
+    
+    # Afegim la resta dels titulars que queden a cada adreca
+    remaining_titulars = num_titulars - num_adreces
+    for i in range(remaining_titulars):
         print(i+1, end='\r')
         owner_id = randint(10000000, 99999999)
-        address_doc = list(adreces.aggregate([{'$sample': {'size': 1}}]))[0]
+        address_val = list(adreces.aggregate([{'$sample': {'size': 1}}]))[0]
         adreces.update_one(
-            {"address": address_doc["address"]},
+            {"address": address_val["address"]},
             {"$push": {"titulars": {"owner_id": owner_id}}}
         )
 
@@ -79,36 +89,30 @@ def create_contractes():
     comptes = db.comptes
     adreces = db.adreces
     
-    contractes_creats = 0
-
-    # Primer, assegurem que cada compte tingui almenys un contracte
-    for compte_doc in comptes.find():
-        address_doc = list(adreces.aggregate([{'$sample': {'size': 1}}]))[0]
-        if not address_doc['titulars']:
-            continue  # Ens assegurem que hi ha titulars a l'adreça
-        owner_id = choice(address_doc['titulars'])['owner_id']
+    # Afegim com a minim un contracte a cada compte
+    for compte_val in comptes.find():
+        address_val = list(adreces.aggregate([{'$sample': {'size': 1}}]))[0]
+        owner_id = choice(address_val['titulars'])['owner_id']
         owner = randname(2) + ' ' + randname(4)
-        
         comptes.update_one(
-            {"acc_id": compte_doc["acc_id"]},
+            {"acc_id": compte_val["acc_id"]},
             {"$push": {"contractes": {"owner_id": owner_id, "owner": owner}}}
         )
-        contractes_creats += 1
     
-    # Ara, creem la resta dels contractes fins arribar a num_contractes
-    while contractes_creats < num_contractes:
-        compte_doc = list(comptes.aggregate([{'$sample': {'size': 1}}]))[0]
-        address_doc = list(adreces.aggregate([{'$sample': {'size': 1}}]))[0]
-        if not address_doc['titulars']:
+    # Afegim la resta dels contractes que queden a cada compte
+    remaining_contractes = num_contractes - num_comptes
+    for i in range(remaining_contractes):
+        print(i+1, end='\r')
+        compte_val = list(comptes.aggregate([{'$sample': {'size': 1}}]))[0]
+        address_val = list(adreces.aggregate([{'$sample': {'size': 1}}]))[0]
+        if not address_val['titulars']:
             continue  # Ens assegurem que hi ha titulars a l'adreça
-        owner_id = choice(address_doc['titulars'])['owner_id']
+        owner_id = choice(address_val['titulars'])['owner_id']
         owner = randname(2) + ' ' + randname(4)
-        
         comptes.update_one(
-            {"acc_id": compte_doc["acc_id"]},
+            {"acc_id": compte_val["acc_id"]},
             {"$push": {"contractes": {"owner_id": owner_id, "owner": owner}}}
         )
-        contractes_creats += 1
 
 def main():
     db.drop_collection("comptes")
@@ -118,14 +122,34 @@ def main():
     create_titulars()
     create_contractes()
     
-    print("Dades introduides correctament.")
+    print("S'han inserit les dades correctament.")
 
     # Comprovacions
-    # assert db.comptes.count_documents({}) == num_comptes, "Error: No hi ha 900 comptes"
-    # assert db.adreces.count_documents({}) == num_adreces, "Error: No hi ha 500 adreces"
-    # assert sum([len(doc["titulars"]) for doc in db.adreces.find()]) == num_titulars, "Error: No hi ha 1000 titulars"
-    # assert sum([len(doc["contractes"]) for doc in db.comptes.find()]) == num_contractes, "Error: No hi ha 4000 contractes"
-    # assert all(len(doc["contractes"]) > 0 for doc in db.comptes.find()), "Error: Hi ha comptes sense cap contracte"
-
+    print("COMPTES: ", db.comptes.count_documents({}))
+    print("ADRECES: ", db.adreces.count_documents({}))
+    print("TITULARS: ", sum([len(doc["titulars"]) for doc in db.adreces.find()]))
+    print("CONTRACTES: ", sum([len(doc["contractes"]) for doc in db.comptes.find()]))
+    
 if __name__ == "__main__":
     main()
+
+# Possibles Errors:
+# A) Script no funciona *
+# a) No 900 comptes *
+# b) No 500 adreces *
+# c) No 1000 titulars *
+# d) No 4000 contractes *
+# e) No índex únic account_id *
+# f) No index únic address *
+# g) No index únic phone *
+# h) Titulars no dins adreces *
+# i) Contractes no dins comptes *
+# j) Contractes no són objectes *
+# k) Un contracte té molts titulars *
+# L) No b.d. bank *
+# m) Núm. contr./tit. no triats aleatòriame *
+# n) Afegeixes col·lecció titulars *
+# o) Afegeixes col·lecció contractes * 
+# p) Comptes sense cap contracte *
+# q) Adreces sense cap titular *
+# r) Nom owner dins adreces *
