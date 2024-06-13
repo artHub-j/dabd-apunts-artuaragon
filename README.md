@@ -25,19 +25,23 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 
 | Sessions           |S1| S2                               | S3 | S4 | S5 | S6 |
 |--------------------|--|----------------------------------|----|----|----|----|
-| Nota <b>(entre 0 i 5)</b> |5 |3                                | 5  | 4.5  | 4  | 5  |
+| Nota  |5/5 |3/5                                | 5/5  | 4.5/5  | 4/5  | 5/5  |
 | Errors             |Bé|MySQL taula movies no existeix.  | Bé | Host havia de ser ubiwan.epsevg.upc.edu. | No es poden editar/eliminar usuaris que tenen caràcter ".   | Bé |
 
-|Total LABS 1ª Part|
+|Nota Total LABS 1ª Part|
 |:---:|
-|8.6|
+|<b>8.6</b>|
 
 ## Notes LABS 2ª Part (Sessió 7 - 12) [10%]
 
 | Sessions           |S7 (1p) |S8 (1p) |S9 (1p) |S10 (1p) |S11 (3p) |S12 (3p) |
 |--------------------|--|--|--|---|---|---|
-| Nota <b>(entre 0 i 5)</b> | 4 | 3 | 3.5 | 0 | 5 | - |
+| Nota  | 4/5 | 3/5 | 3.5/5 | 0/5 | 5/5 | -/5 |
 | Errors             | No ben raonat postgres. |  Interessos mal calculats. |Valors de work_mem,  maintenance_work_mem i effective_cache_size no adients. |  MySQL No ben raonat, No logs Postgres, PostgreSQL Millora no adequada, No ben raonat | Bé | - |
+
+|Nota Total LABS 2ª Part|
+|:---:|
+|<b> - </b>|
 
 ## Exemples d'Activitat 1
 
