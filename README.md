@@ -21,7 +21,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 |----|--|--|--|--|--|--|--|--|--|--|--|--|
 |Link|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%201/s1-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%202/s2-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%203/s3-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%204/s4-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%205/s5-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%206/s6-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%207/s7-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%208/s8-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%209/s9-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%2010/s10-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%2011/s11-apunts.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/LABS/Sessio%2012/s12-apunts.md)|
 
-## Notes LABS 1ª Part (Sessió 1 - 6) [10%]
+### Notes LABS 1ª Part (Sessió 1 - 6) [10%]
 
 | Sessions           |S1| S2                               | S3 | S4 | S5 | S6 |
 |--------------------|--|----------------------------------|----|----|----|----|
@@ -32,7 +32,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 |:---:|
 |<b>8.6</b>|
 
-## Notes LABS 2ª Part (Sessió 7 - 12) [10%]
+### Notes LABS 2ª Part (Sessió 7 - 12) [10%]
 
 | Sessions           |S7 (1p) |S8 (1p) |S9 (1p) |S10 (1p) |S11 (3p) |S12 (3p) |
 |--------------------|--|--|--|---|---|---|
