@@ -36,8 +36,8 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 
 | Sessions           |S7 (1p) |S8 (1p) |S9 (1p) |S10 (1p) |S11 (3p) |S12 (3p) |
 |--------------------|--|--|--|---|---|---|
-| Nota  | 4/5 | 3/5 | 3.5/5 | 0/5 | 5/5 | -/5 |
-| Errors             | No ben raonat postgres. |  Interessos mal calculats. |Valors de work_mem,  maintenance_work_mem i effective_cache_size no adients. |  MySQL No ben raonat, No logs Postgres, PostgreSQL Millora no adequada, No ben raonat | Bé | - |
+| Nota  | 4/5 | 3/5 | 3.5/5 | 0/5 | 5/5 | 4.5/5 |
+| Errors             | No ben raonat postgres. |  Interessos mal calculats. |Valors de work_mem,  maintenance_work_mem i effective_cache_size no adients. |  MySQL No ben raonat, No logs Postgres, PostgreSQL Millora no adequada, No ben raonat | Bé | Contractes no són un map<int, text> |
 
 |Nota Total LABS 2ª Part|
 |:---:|
