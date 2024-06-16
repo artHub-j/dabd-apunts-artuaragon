@@ -41,7 +41,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 
 |Nota Total LABS 2ª Part|
 |:---:|
-|<b> - </b>|
+|<b> 7.8 </b>|
 
 ## Exemples d'Activitat 1
 
