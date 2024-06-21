@@ -46,7 +46,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 ## Exemples d'Examen LAB (Activitat 1) [10%]
 
 | Examen LAB |aprovats.db (2022-2023) |registre_parelles.db (2023-2024 A)|linies_factura.db (2023-2024 B)|
-|----|:---------:|:------------------:|:---------------:|
+|:--:|:---------:|:------------------:|:---------------:|
 |Link|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-aprovats.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-registre_parelles.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/Exemples%20Activitat%201/Activitat1-apunts-linies_factura.md)|
 
 <!--
