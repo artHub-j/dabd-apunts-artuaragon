@@ -51,13 +51,20 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO. Les meves solucions per tots e
 
 ## Exemple de Projecte (App Web de Gestió) [30%]
 
-| Projecte | la-burgeuesa-db |
+| Projecte | la-burguesa-db |
 |:--------:|:---------------:|
 | Link Repo| [<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/7311e989-763c-40a9-82bf-790be7de6b1b" width="60" height="60">](https://github.com/artHub-j/la-burguesa-db) |
 
-### Tecnologia Usada 
-- Backend:  Django + Python
-- Frontend: Vite + React + ChakraUI + Typescript
+|                  | Tecnologia Usada        | Llenguatge     | 
+|:----------------:|-------------------------|----------------|
+| Backend          | Django                  | Python         |
+| Frontend         | Vite + React + ChakraUI | Typescript, CSS|
+
+## Exemple d'Examen Parcial i Final [20% + 20%]
+
+| Examens | Parcial C1 (Disseny) | Final C2 (Disseny) | Final C3 (Administració) |
+|:-------:|:----------:|:----------:|:--------:|
+|Link|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">](https://github.com/artHub-j/dabd-apunts-artuaragon/blob/main/EXAMENS/SolucioExamen.md)|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">]()|[<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/771e2532-56fb-4ee6-ae5c-5795eb752acd" width="40" height="40">]()|
 
 <!--
 ## Directory Tree
@@ -157,7 +164,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO. Les meves solucions per tots e
   - ├── Practiques (Sessions 1, 2, 3 i 4).pdf
   - ├── README.md
   - └── <img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/1dc870d5-fb16-43e4-97e9-9b5873051af9" width="15" alt="folder"> TEO/
--->
+
 
 ## Annex: Tasques habituals que sol fer un administrador de PostgreSQL
 
@@ -209,3 +216,4 @@ Es recupera amb:
 ```
 psql nom_base_de_dades < filename
 ```
+-->
