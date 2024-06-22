@@ -53,7 +53,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO.
 
 | Projecte | la-burgeuesa-db |
 |:--------:|:---------------:|
-| Link Repo| [<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/7311e989-763c-40a9-82bf-790be7de6b1b" width="40" height="40">](https://github.com/artHub-j/la-burguesa-db) |
+| Link Repo| [<img src="https://github.com/artHub-j/dabd-apunts-artuaragon/assets/92806890/7311e989-763c-40a9-82bf-790be7de6b1b" width="60" height="60">](https://github.com/artHub-j/la-burguesa-db) |
 
 ### Tecnologia Usada 
 - Backend:  Django + Python
