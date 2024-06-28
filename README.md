@@ -57,7 +57,7 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO. Les meves solucions per tots e
 
 |                  | Tecnologia Usada        | Llenguatge     | 
 |:----------------:|-------------------------|----------------|
-| Backend          | Django                  | Python         |
+| Backend          | Django + PostrgeSQL     | Python         |
 | Frontend         | Vite + React + ChakraUI | Typescript, CSS|
 
 ## Exemple d'Examen Parcial i Final [20% + 20%]
