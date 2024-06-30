@@ -60,6 +60,12 @@ Apunts de l'assignatura DABD a la UPC. LAB + TEO. Les meves solucions per tots e
 | Backend          | Django + PostrgeSQL     | Python         |
 | Frontend         | Vite + React + ChakraUI | Typescript, CSS|
 
+|   Apartat  |      Prob+UML (20%)      |     E.R. (20%)     |              Dades reals (20%)             | Optimització (5%)                      | Aplicació (35%)      | Total      |
+|:----------:|:------------------------:|:------------------:|:------------------------------------------:|----------------------------------------|----------------------|------------|
+| Descripció | Descripció + disseny UML | Esquema relacional | Script usat per afegir dades reals a la BD | Optimització d'una consulta en concret | Aplicació de gestió. | Nota Final |
+| Nota       | 6/10                     | 7/10               | 9/10                                       | 6/10                                   | 7/10                 | 7,2/10     |
+
+
 ## Exemple d'Examen Parcial i Final [20% + 20%]
 
 | Examens | Parcial C1 (Disseny) | Final C2 (Disseny) | Final C3 (Administració) |
